@@ -155,7 +155,7 @@ nav {
   border-bottom: 3px solid;
   border-image: linear-gradient(to right,#00d9ff, #7a5cff) 1;
   background-size: cover;
-  background-image: url(/assets/gamesImgs/BuryNewLogo.png);
+  background-image: url(assets/gamesImgs/BuryNewLogo.png);
   background-repeat: no-repeat;
 }
 
@@ -164,7 +164,7 @@ nav {
   border-image: linear-gradient(to right,
       #ff002f,
       #ff6a00) 1;
-  background-image: url(/assets/gamesImgs/ChatGPT\ Image\ 18\ de\ mai.\ de\ 2026\,\ 04_57_07.png);
+  background-image: url(assets/gamesImgs/ChatGPT\ Image\ 18\ de\ mai.\ de\ 2026\,\ 04_57_07.png);
   background-size: cover;
 }
 
