@@ -1,0 +1,359 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+
+  box-sizing: 0;
+}
+
+body {
+  background-color: #020617;
+  /*Background de https://patterncraft.fun/*/
+  background-image:
+    linear-gradient(to right, rgba(71, 85, 105, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(71, 85, 105, 0.3) 1px, transparent 1px),
+    radial-gradient(circle at center, rgba(139, 92, 246, 0.15), transparent 70%);
+  background-size:
+    32px 32px,
+    32px 32px,
+    100% 100%;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  max-height: 50px;
+  max-width: 100%;
+  gap: 1rem;
+
+  background:
+    radial-gradient(125% 125% at 50% 10%,
+      #000000 40%,
+      #0d1a36 100%);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid rgba(19, 59, 139, 0.304);
+
+  
+
+}
+
+
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.logo img{
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover{
+  transform: scale(1.4);
+}
+
+#siteLogo {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  width: 30%;
+  height: 40%;
+  border: 1px solid black;
+  border-radius: 3000px;
+}
+#linkToHome {
+  color: #605f5f;
+}
+
+
+#linksImage {
+  display: flex;
+  max-width: 50%;
+}
+
+#userImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+#listRight {
+  color: rgb(100, 105, 105);
+  font-size: 1px;
+  padding: 20px;
+  list-style: none;
+}
+
+.undListFigs img{
+  transition: transform 0.3s ease;
+}
+
+.undListFigs img:hover{
+  transform: scale(1.2);
+  background-color: #605e5e1b;
+  color: white;
+}
+
+.undListFigs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  color: aliceblue;
+}
+
+.undList {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.linksTitle {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 9px;
+  border-left: px solid white;
+  border-right: px solid white;
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+.linksTitle:hover {
+  transform: scale(1.1); 
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+}
+
+
+#title {
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.threeLinks {
+  column-gap: 300px;
+}
+
+#backgroundBuryTheLight {
+  height: 100%;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right,#00d9ff, #7a5cff) 1;
+  background-size: cover;
+  background-image: url(/assets/gamesImgs/BuryNewLogo.png);
+  background-repeat: no-repeat;
+}
+
+#backgroundDevilsNeverCry {
+  border-top: 3px solid;
+  border-image: linear-gradient(to right,
+      #ff002f,
+      #ff6a00) 1;
+  background-image: url(/assets/gamesImgs/ChatGPT\ Image\ 18\ de\ mai.\ de\ 2026\,\ 04_57_07.png);
+  background-size: cover;
+}
+
+
+
+
+
+.letItHappenSection {
+  display: flex;
+  flex: 3;
+  
+  gap: 55px;
+  margin: 0 auto;
+  
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#BTLIMG {
+  background-size: cover ;
+  max-width: 70vh;
+}
+
+
+.BTLITEMS {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#DMCIMG {
+  background-size: cover ;
+  max-width: 75vh;
+}
+
+.DMCITEMS {
+  text-align: center;
+}
+
+
+#musicTitleDMCANDBTL {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-family: fantasy;
+  padding: 24px;
+}
+
+
+#Recommendation {
+  color: #605f5f;
+  font-size: 15px;
+  
+  text-align: center;
+  font-family: fantasy;
+  cursor: default;
+}
+
+
+
+#BTLAUDIO {
+  border-radius: 30px;
+  width: 500px;
+  padding: 4px;
+  background:
+  linear-gradient(to top,
+  rgb(15, 15, 163),
+  transparent);
+  box-shadow: 0 0 20px rgba(51, 215, 248, 0.5);
+}
+
+#BTLAUDIO::-webkit-media-controls-panel {
+  background: #000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 1%, rgba(18, 21, 204, 1) 55%, rgb(85, 0, 255) 100%);
+}
+
+#DMCAUDIO::-webkit-media-controls-panel {
+  background: #ff0000;
+  background: linear-gradient(360deg, rgb(255, 98, 0) 0%, rgba(168, 10, 10, 1) 54%, rgba(3, 3, 0, 1) 100%);
+}
+
+#DMCAUDIO {
+  border-radius: 90px;
+  width: 500px;
+  padding: 4px;
+  background:
+  linear-gradient(
+    rgb(255, 81, 0, 0.25),
+    transparent);
+    box-shadow: 0 0 20px rgba(255, 192, 1, 0.331);
+}
+  
+/* PERSONA 3 SECTION */
+
+#backgroundPersonaThree {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: end;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundGif {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+/* 
+.fundoEscuro {
+  position: absolute;
+  z-index: 2;
+  background: #ff002f;
+  inset: 0 ;           
+  background-color: rgba(0, 0, 0, 0.12) ;  
+} */
+
+.containerP3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divAudioP3 {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+
+  max-width: 500px;
+  max-height: 600px;
+
+  gap: 35px;
+  padding: 50px;
+
+  justify-content: center;
+  align-items: baseline;
+}
+
+.SeparationDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.background-main {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  z-index: 2;
+  flex: 1;
+  
+}
+#DirectorMusicTitleP3 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-family: fantasy;
+  text-align: center;
+}
+
+#musicTitleP3 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-family: fantasy;
+  text-align: center;
+  border-bottom: 1px solid whitesmoke;
+
+}
+
+#P3Audio {
+  border-radius: 30px;
+  width: 500px;
+  padding: 5px;
+  background:
+    linear-gradient(to bottom,
+      rgb(51, 215, 248, 0.5),
+      transparent);
+  box-shadow: 0 0 20px rgba(20, 20, 255);
+}
+
+#P3Audio::-webkit-media-controls-panel {
+  background-color: rgba(0, 0, 0, 0.037);  
+}

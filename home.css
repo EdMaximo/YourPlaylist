@@ -1,0 +1,349 @@
+* {
+  font-family: fantasy;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: 0;
+}
+
+body {
+  background-color: #020617; /*Background de https://patterncraft.fun/*/
+  background-image:
+    linear-gradient(to right, rgba(71,85,105,0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(71,85,105,0.3) 1px, transparent 1px),
+    radial-gradient(circle at center, rgba(139,92,246,0.15), transparent 70%);
+  background-size:
+    32px 32px,
+    32px 32px,
+    100% 100%;
+  min-height: 100vh;
+  padding-top: 10px;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  max-height: 50px;
+  max-width: 100%;
+  gap: 1rem;
+  
+  background:
+    radial-gradient(
+      125% 125% at 50% 10%,
+      #000000 40%,
+      #0d1a36 100%
+    );
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  
+}
+
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.logo img{
+  transition: 0.3s ease;
+}
+
+.logo img:hover{
+  transform: scale(1.2);
+}
+
+#siteLogo {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  width: 30%;
+  height: 40%;
+  border: 1px solid black;
+  border-radius: 3000px;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+#linksImage img{
+  transition: transform 0.3s ease;
+}
+
+#linksImage img:hover{
+  transform: scale(1.2);
+}
+
+#linkToHome {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+#linkToHome:hover {
+  transform: scale(1.1); 
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+}
+
+
+#linksImage {
+  display: flex;
+  max-width: fIt-content;
+}
+
+#userImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+
+.undListFigs{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  color: aliceblue;
+}
+
+.undList{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+
+}
+
+.LinksTitle {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 9px;
+  border-left: px solid white;
+  border-right: px solid white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+.LinksTitle:hover {
+  transform: scale(1.1); 
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+}
+
+
+#title {
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.threeLinks {
+  column-gap: 300px;
+}
+
+#backgroundHeader {
+  padding-top: 127px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            ellipse 80% 69% at 0% 50%,
+            rgba(139, 92, 246, 0.25),
+            transparent 125%
+        ),
+        #000000;
+}
+
+#backgroundHeader::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(
+            circle at 1px 1px,
+            rgba(255, 255, 255, 0.18) 1px,
+            transparent 0
+        );
+    background-size: 20px 20px;
+
+    -webkit-mask-image: linear-gradient(
+        to left,
+        #000 0%,
+        #000 35%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to left,
+        #000 0%,
+        #000 35%,
+        transparent 100%
+    );
+}
+
+
+
+.backgroundMain{
+  
+  position: relative;
+
+  background-color: #000;
+
+  background-image:
+
+    radial-gradient(
+      ellipse 80% 60% at 100% 50%,
+      rgba(255, 204, 0, 0.581),
+      transparent 75%
+    ),
+
+    linear-gradient(
+      to right,
+      rgba(229,231,235,0.08) 1px,
+      transparent 1px
+    ),
+
+    linear-gradient(
+      to bottom,
+      rgba(229,231,235,0.08) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    100% 100%,
+    40px 40px,
+    40px 40px;
+
+  background-position:
+    center,
+    center,
+    center;
+  border-radius: 20px;
+
+  
+}
+
+.TameImpalaSection {
+  display: flex;
+  flex: 3;
+  position: relative;
+  z-index: 1;
+  
+  gap: 55px;
+  margin: 0 auto;
+
+  padding: 50px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.HueyLewisSection {
+
+  display: flex;
+  flex: 3;
+  position: relative;
+  z-index: 1;
+  
+  gap: 55px;
+  margin: 0 auto;
+
+  padding: 50px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+#theSlowRushAlbum {
+  max-width: 500px;
+}
+
+
+
+
+
+/*Titulos das musicas de: home.html*/
+
+#mainSingerName {
+  padding-top: 20px;
+  font-style: italic;
+  color: aliceblue;
+  text-align: center;
+  border-bottom: 2px solid honeydew;
+  max-width: 600px;
+  
+}
+
+#musicTitle {
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: fantasy;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#Recommendation {
+  color: #605f5f;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 15px;
+  cursor: default;
+}
+/*Fim dos Titulos*/
+
+
+/* Audios de: home.css*/
+audio::-webkit-media-controls-panel{
+background-color: rgb(127, 112, 112);
+border-radius: 0px;
+}
+
+#NewPersonAudio {
+  border-radius: 30px;
+  width: 500px;
+  padding: 4px;
+  background:
+  linear-gradient(
+    to right,
+    rgb(73, 16, 195),
+    transparent
+    );
+  box-shadow: 0 0 20px rgba(77, 166, 238, 0.5);
+}
+
+#HUEYLEWISAudio {
+  border-radius: 30px;
+  width: 500px;
+  padding: 4px;
+  background:
+    linear-gradient(
+      to left,
+      rgb(255, 242, 0),
+      transparent
+    );
+  box-shadow: 0 0 12px rgba(252, 244, 86, 0.405);
+}
+/*Fim dos audios*/
+
