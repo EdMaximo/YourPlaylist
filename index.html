@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Black+Ops+One&display=swap" rel="stylesheet">
   <script defer src="script/script.js"></script>
   <title>MyFavoriteMusics</title>
 </head>
@@ -35,17 +38,17 @@
     <main>
       <article class="articleOne">
         <div id="backgroundHeader" >
-          <section class="containerTameImpala">
+          <section class="container">
           
             <h1 id="mainSingerName">TAME IMPALA</h1>
           
 
-              <div class="TameImpalaSection">
+              <div class="ShowMusicsSections">
 
                 <div class="letithappen">
                   
                   <img src="assets/LetItHappen.jpg" alt="" id="theSlowRushAlbum">
-                  <h1 id="musicTitle">Let It Happen</h1>
+                  <h1 class="musicTitle">Let It Happen</h1>
                   <audio src="assets/Music/LetItHappen.mp3" controls id="NewPersonAudio"></audio>
                   
                   
@@ -54,7 +57,7 @@
                 <div class="letithappen">
 
                   <img src="assets/slowRush.jpg" alt="" id="theSlowRushAlbum">
-                  <h1 id="musicTitle">Borderline</h1>
+                  <h1 class="musicTitle">Borderline</h1>
                   <audio src="assets/Music/Borderline.mp3" controls id="NewPersonAudio"></audio>
 
                 </div>
@@ -62,26 +65,27 @@
                 <div class="letithappen"> 
 
                   <img src="assets/InnerSpeaker_log.png" alt="" id="theSlowRushAlbum">
-                  <h1 id="musicTitle">New person, Same old mistakes</h1>
+                  <h1 class="musicTitle" style="font-size: clamp(1rem, 2vw, 2rem) !important;">New person, Same old mistakes</h1>
                   <audio src="assets/Music/NewPerson_SameOldMistakes.mp3" controls id="NewPersonAudio"></audio>
 
                 </div>
               </div>
             </section>
-            </div>      
+            </div>    
+              
 
        
           
           <div class="backgroundTwo">
-            <section id="sectionTwo">
+            <section class="container">
               <h1 id="mainSingerName" style="padding-top: 70px;"> HUEY LEWIS</h1>
   
-              <div class="HueyLewisSection">
+              <div class="ShowMusicsSections">
 
                 <div class="letithappen">
                   
                   <img src="assets/PowerOfLoveLogo.png" alt="" id="theSlowRushAlbum">
-                  <h1 id="musicTitle">THE POWER OF LOVE</h1>
+                  <h1 class="musicTitle">THE POWER OF LOVE</h1>
                   <audio src="assets/Music/ThePowerOfLove.mp3" controls id="HUEYLEWISAudio"></audio>
                   
                   
@@ -90,7 +94,7 @@
                 <div class="letithappen">
 
                   <img src="assets/HipToBeSquareLogo.png" alt="" id="theSlowRushAlbum">
-                  <h1 id="musicTitle">HIP TO BE SQUARE</h1>
+                  <h1 class="musicTitle">HIP TO BE SQUARE</h1>
                   <audio src="assets/Music/HipToBeSquare.mp3" controls id="HUEYLEWISAudio"></audio>
 
                 </div>
@@ -98,7 +102,7 @@
                 <div class="letithappen">
 
                   <img src="assets/BackInTimeLogo.png" alt="" id="theSlowRushAlbum">
-                  <h1 id="musicTitle">BACK IN TIME</h1>
+                  <h1 class="musicTitle">BACK IN TIME</h1>
                   <audio src="assets/Music/BackInTime.mp3" controls id="HUEYLEWISAudio"></audio>
 
                 </div>
@@ -106,17 +110,16 @@
           </section>
         </div>
         
-        <div class="backgroundThree">
+        <div class="backgroundThree"> 
+          <section class="container">
+              <h1 id="mainSingerName" style="padding-top: 70px;"> Michael Jackson</h1>
           
-          <section id="sectionThree">
-                          <h1 id="mainSingerName" style="padding-top: 70px;"> Michael Jackson</h1>
-          
-                <div class="HueyLewisSection">
+                <div class="ShowMusicsSections">
 
                   <div class="letithappen">
 
                     <img src="assets/Beat it img.jfif" alt="" id="theSlowRushAlbum">
-                    <h1 id="musicTitle">BEAT IT</h1>
+                    <h1 class="musicTitle">BEAT IT</h1>
                     <audio src="assets/Music/BeatItMichaelJackson.mp3" controls id="MichaelAudio"></audio>
 
 
@@ -125,7 +128,7 @@
                   <div class="letithappen">
 
                     <img src="assets/MJThriller.png" alt="" id="theSlowRushAlbum">
-                    <h1 id="musicTitle">THRILLER</h1>
+                    <h1 class="musicTitle">THRILLER</h1>
                     <audio src="assets/Music/ThrillerMJ.mp3" controls id="MichaelAudio"></audio>
 
                   </div>
@@ -133,7 +136,7 @@
                   <div class="letithappen">
 
                     <img src="assets/MJBillieJean.png" alt="" id="theSlowRushAlbum" style="width: 100%; height: rem;">
-                    <h1 id="musicTitle">BILLIE JEAN</h1>
+                    <h1 class="musicTitle">BILLIE JEAN</h1>
                     <audio src="assets/Music/BillieJeanMJ.mp3" controls id="MichaelAudio"></audio>
 
                   </div>
