@@ -120,7 +120,7 @@ nav {
 
 #userImg {
   width: 47px;
-  height: 42px;
+  height: 47px;
   border-radius: 50%;
   border: 1px solid white;
 }
@@ -294,6 +294,7 @@ nav {
   max-width: 2200px;
   min-height: 80vh;
   flex: 3;
+  padding-top: 2%;
   position: relative;
   z-index: 1;
   

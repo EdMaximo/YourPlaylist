@@ -4,15 +4,32 @@
   padding: 0;
   font-family: fantasy;
 
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
-@font-face {
+@media (max-width: 768px) {
+  #Recommendation{
+    display: none;
+  }
+
+  .LinksTitle {
+    font-size: 0.45rem;
+  }
+
+
+}
+
+#userName {
+  font-size: 13px;
+}
+
+
+@font-face { /*Adiciona a fonte de Devil May Cry*/
   font-family: "DevilMayCry";
   src: url("assets/Fontes/DevilMayCry.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} 
 
 body {
   background-color: #020617;
@@ -186,6 +203,7 @@ nav {
   gap: 55px;
   margin: 0 auto;
   
+  
   padding: 50px;
   justify-content: center;
   align-items: center;
@@ -193,19 +211,25 @@ nav {
 }
 
 #BTLIMG {
-  background-size: cover ;
-  max-width: 70vh;
+  background-size: cover;
+  max-width: 100%;
+
+  box-shadow: 0px 0px 35px 15px;
 }
 
 
 .BTLITEMS {
   text-align: center;
+  width: 100%;
+  max-width: 500px;
   padding-top: 50px;
 }
 
 #DMCIMG {
-  background-size: cover ;
-  max-width: 75vh;
+  background-size: cover;
+  max-width: 100%;
+
+  box-shadow: 0px 0px 35px 15px black;
 }
 
 .DMCITEMS {
@@ -214,7 +238,7 @@ nav {
 
 
 .musicTitleDMCANDBTL {
-  font-size: 3.5rem;
+  font-size: clamp(1.5rem 3vw 2.5rem);
   font-family: "DevilMayCry";
   font-weight: 100;
   font-style: normal;
@@ -225,7 +249,7 @@ nav {
 
 #Recommendation {
   color: #605f5f;
-  font-size: 15px;
+  font-size: clamp(0.5rem, 1rem, 2rem);
   text-align: center;
   font-family: fantasy;
   cursor: default;
@@ -235,7 +259,9 @@ nav {
 
 #BTLAUDIO {
   border-radius: 30px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+
   padding: 4px;
   background:
   linear-gradient(to top,
@@ -256,7 +282,8 @@ nav {
 
 #DMCAUDIO {
   border-radius: 90px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   padding: 4px;
   background:
   linear-gradient(
@@ -266,6 +293,8 @@ nav {
 }
   
 /* PERSONA 3 SECTION */
+
+ /* gif de Background do persona 3 */
 
 #backgroundPersonaThree {
   position: relative;
@@ -300,6 +329,9 @@ nav {
   background-color: rgba(0, 0, 0, 0.12) ;  
 } */
 
+
+/* Containers de persona 3 */
+
 .containerP3 {
   display: flex;
   align-items: center;
@@ -308,22 +340,23 @@ nav {
 
 .divAudioP3 {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
-  flex: 5;
 
   width: 100%;
-  max-width: 500px;
+  max-width: 30vw;
 
-  height: 100%;
-  max-height: 600px;
-
-  gap: 35px;
-  padding: 50px;
+  height: 20% !important;
+  max-height: 100vw !important;
 
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
+  gap: 15px;
 }
 
+
+
+ 
 .SeparationDiv {
   display: flex;
   flex-direction: column;
@@ -333,11 +366,18 @@ nav {
 .background-main {
   position: relative;
   display: flex;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   z-index: 2;
   flex: 1;
   
 }
+
+/* Fim dos containers de persona 3 */
+
+
+/* Titulos de persona 3 */
+
 #DirectorMusicTitleP3 {
   color: rgb(255, 255, 255);
   font-size: 32px;
@@ -345,24 +385,74 @@ nav {
   text-align: center;
 }
 
-#musicTitleP3 {
+.musicTitleP3 {
   color: rgb(255, 255, 255);
-  font-size: 32px;
+  font-size: 1.5rem;
   font-family: fantasy;
   text-align: center;
   border-bottom: 1px solid whitesmoke;
 
+  -webkit-text-stroke: 0.5px #000000;
 }
+
+
+/* Fim dos titulos de persona 3 */
+
+
+/* Audio/Musicas de persona 3 */
 
 .P3Audio {
   border-radius: 30px;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
+
   padding: 5px;
+
   background:
     linear-gradient(to bottom,
       rgb(51, 215, 248, 0.5),
       transparent);
   box-shadow: 0 0 20px rgba(20, 20, 255);
+}
+
+#P3Audio::-webkit-media-controls-panel {
+  background-color: rgba(0, 0, 0, 0.037);  
+}
+
+/* Fim de  Audio/Musicas de persona 3  */
+
+
+/* Começo de Persona 5 */
+
+/* gif de background do persona 5 */
+
+#backgroundPersonaFiveP5 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: normal;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.P5Audio {
+  border-radius: 30px;
+  max-width: 100%;
+  width: 500px;
+
+  padding: 5px;
+
+  background-color: black;
+  box-shadow: 0 0 20px rgb(255, 20, 20);
 }
 
 #P3Audio::-webkit-media-controls-panel {
